@@ -1,36 +1,41 @@
 var testCanvas = (function (document) {
 
-  var _canvas;
+    var _canvas = null;
 
-  var createCanvas = function (element) {
-    _canvas = new fabric.Canvas(element, {
-      backgroundColor: 'rgb(100,100,200)',
-      selectionColor: 'blue',
-      selectionLineWidth: 2
+    var createCanvas = function (element) {
+        _canvas = new fabric.Canvas(element, {
+            backgroundColor: 'rgb(100,100,200)',
+            selectionColor: 'blue',
+            selectionLineWidth: 2
+        });
+        _canvas.setHeight(400);
+        _canvas.setWidth(400);
+        _canvas.renderAll();
+    }
+
+    var addRect = function () {
+        var rect = new fabric.Rect({
+            left: 100,
+            top: 100,
+            fill: 'red',
+            width: 50,
+            height: 50
+        });
+        _canvas.add(rect);
+    };
+
+    $(function () {
+
     });
-    _canvas.setHeight(400);
-    _canvas.setWidth(400);
-    _canvas.renderAll();
-  }
 
-  var addRect = function () {
-    var rect = new fabric.Rect({
-      left: 100,
-      top: 100,
-      fill: 'red',
-      width: 50,
-      height: 50
-    });
-    _canvas.add(rect);
-  };
-
-  $(function () {
-
-  });
-
-  return {
-    createCanvas: createCanvas,
-    addRect: addRect
-  };
+    var getCanvas = function () {
+        return _canvas;
+    }
+    return {
+        getCanvas: getCanvas,
+        createCanvas: createCanvas,
+        addRect: addRect
+    }
+        ;
 
 })(document);
