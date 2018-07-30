@@ -1,4 +1,4 @@
-package com.stacja.web.conf;
+package it.stacja.app.web.conf;
 
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
@@ -16,7 +16,7 @@ public class SwaggerConfiguration {
     public Docket api() {
         return new Docket(DocumentationType.SWAGGER_2)
                 .select()
-                .apis(RequestHandlerSelectors.basePackage("it.stacja.springfunapp.api"))
+                .apis(RequestHandlerSelectors.basePackage("it.stacja.app.web.api"))
                 .paths(PathSelectors.any())
                 .build();
     }

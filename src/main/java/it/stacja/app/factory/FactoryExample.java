@@ -1,4 +1,4 @@
-package com.stacja.factory;
+package it.stacja.app.factory;
 
 public class FactoryExample {
 

@@ -1,4 +1,4 @@
-package com.stacja.factory.context;
+package it.stacja.app.factory.context;
 
 import java.lang.annotation.ElementType;
 import java.lang.annotation.Retention;

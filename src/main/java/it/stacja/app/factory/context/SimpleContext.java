@@ -1,4 +1,4 @@
-package com.stacja.factory.context;
+package it.stacja.app.factory.context;
 
 import org.reflections.ReflectionUtils;
 import org.reflections.Reflections;
