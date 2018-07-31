@@ -1,4 +1,4 @@
-package it.stacja.app.web.wykop.app;
+package it.stacja.app.web.wykop.app.image;
 
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;

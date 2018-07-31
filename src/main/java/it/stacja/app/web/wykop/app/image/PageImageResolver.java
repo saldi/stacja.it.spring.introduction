@@ -1,4 +1,4 @@
-package it.stacja.app.web.wykop.app;
+package it.stacja.app.web.wykop.app.image;
 
 public interface PageImageResolver {
 
