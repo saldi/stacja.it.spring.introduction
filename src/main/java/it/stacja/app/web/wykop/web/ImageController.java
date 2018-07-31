@@ -1,4 +1,4 @@
-package it.stacja.app.web.controllers;
+package it.stacja.app.web.wykop.web;
 
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;
@@ -7,7 +7,7 @@ import org.springframework.web.bind.annotation.RequestMapping;
 @RequestMapping("/image")
 public class ImageController {
 
-    @RequestMapping("/")
+    @RequestMapping("/main")
     public void mainPage() {
 
     }
