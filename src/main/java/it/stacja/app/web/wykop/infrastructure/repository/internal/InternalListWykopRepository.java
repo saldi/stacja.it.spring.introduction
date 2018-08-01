@@ -1,10 +1,12 @@
-package it.stacja.app.web.wykop.infrastructure;
+package it.stacja.app.web.wykop.infrastructure.repository.internal;
 
 import it.stacja.app.web.wykop.domain.Wykop;
+import it.stacja.app.web.wykop.infrastructure.WykopRepository;
 import org.springframework.stereotype.Component;
 
 import java.util.ArrayList;
 import java.util.List;
+
 
 @Component
 public class InternalListWykopRepository implements WykopRepository {

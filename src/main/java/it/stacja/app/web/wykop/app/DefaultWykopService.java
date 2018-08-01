@@ -21,8 +21,7 @@ public class DefaultWykopService implements WykopService {
 
     @Override
     public void createWykop(CreateWykopRequest request) {
-        Wykop wykop = wykopFactory.createWykop(request);
-        wykopRepository.save(wykop);
+        wykopFactory.createWykop(request);
     }
 
     @Override

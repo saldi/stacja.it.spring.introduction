@@ -20,6 +20,8 @@ public class WykopFactory {
 
     public Wykop createWykop(CreateWykopRequest request) {
         String imageURL = pageImageResolver.resolveImageURL(request.getUrl());
-        return Wykop.from(request, imageURL);
+        Wykop wykop = Wykop.from(request, imageURL);
+        wykopRepository.save(wykop);
+        return wykop;
     }
 }

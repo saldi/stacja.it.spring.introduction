@@ -57,12 +57,12 @@
     $(function () {
         $("#save").click(function () {
             var configName = $("#form input[name='configName']").val();
-            savePicture(configName, testCanvas.canvas)
+            savePicture(configName, testCanvas.getCanvas())
         });
 
         $("#load").click(function () {
             var configName = $("#form input[name='configName']").val();
-            loadPicture(configName, testCanvas.canvas)
+            loadPicture(configName, testCanvas.getCanvas())
         })
 
         $("#rect").click(function () {

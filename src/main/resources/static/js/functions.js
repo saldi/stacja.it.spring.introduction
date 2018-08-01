@@ -1,6 +1,7 @@
 var savePicture = function (name, canvas) {
     var saveData = JSON.stringify(canvas);
     $.ajax({
+        contentType:"application/json",
         data: saveData,
         url: '/config/' + name,
         type: 'PUT',
