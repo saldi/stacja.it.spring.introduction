@@ -2,11 +2,6 @@ package it.stacja.app.web.wykop.domain;
 
 import it.stacja.app.web.wykop.commands.CreateWykopRequest;
 
-import javax.persistence.Entity;
-import javax.persistence.GeneratedValue;
-import javax.persistence.GenerationType;
-import javax.persistence.Id;
-
 public class Wykop {
 
     private Long id;
