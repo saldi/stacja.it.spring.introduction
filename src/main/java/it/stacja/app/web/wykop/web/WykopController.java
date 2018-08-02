@@ -8,6 +8,8 @@ import org.springframework.web.bind.annotation.RequestMethod;
 
 import java.util.Map;
 
+@Controller
+@RequestMapping("/wykop")
 public class WykopController {
 
     private WykopService wykopService;
@@ -16,9 +18,20 @@ public class WykopController {
         this.wykopService = wykopService;
     }
 
-
+    @RequestMapping("/main")
     public void main() {
 
+    }
+
+    @RequestMapping(value = "/add", method = RequestMethod.POST)
+    public String add(CreateWykopRequest request) {
+        wykopService.createWykop(request);
+        return "redirect:list";
+    }
+
+    @RequestMapping("/list")
+    public void list(Map pageMap) {
+        pageMap.put("list", wykopService.findWykop());
     }
 
 
