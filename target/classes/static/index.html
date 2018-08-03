@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Stacja.IT</title>
+    <link rel="stylesheet" type="text/css"
+          href="css/bootstrap.css"
+          th:href="@{/css/bootstrap.css}"/>
+    <link rel="stylesheet" type="text/css"
+          href="css/bootstrap-grid.css"
+          th:href="@{/css/bootstrap-grid.css}"/>
+    <link rel="stylesheet" type="text/css"
+          href="css/app.css"
+          th:href="@{/css/app.css}"/>
+</head>
+<body>
+<h2>Stacja.IT aplikacja testowa</h2>
+
+
+<div class="container-fluid">
+    <div class="row">
+        <nav class="nav flex-column">
+            <a href="/">
+                <button id="form" type="button" class="btn btn-primary btn-space">Formularz</button>
+            </a>
+            <a href="/image/main">
+                <button id="image" type="button" class="btn btn-primary btn-space">API</button>
+            </a>
+        </nav>
+    </div>
+</div>
+
+<script src="js/jquery-3.3.1.min.js" th:src="@{/js/jquery-3.3.1.min.js}"></script>
+<script src="js/bootstrap.js" th:src="@{/js/bootstrap.js}"></script>
+
+</body>
+</html>

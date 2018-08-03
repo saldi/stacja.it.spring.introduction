@@ -1,7 +1,5 @@
 package it.stacja.app.web.wykop.domain;
 
-import it.stacja.app.web.wykop.commands.CreateWykopRequest;
-
 public class Wykop {
 
     private Long id;
@@ -61,7 +59,5 @@ public class Wykop {
     }
 
 
-    public static Wykop from(CreateWykopRequest request, String imageUrl) {
-        return new Wykop(request.getName(), request.getDescription(), request.getUrl(), imageUrl);
-    }
+
 }

@@ -1,13 +1,12 @@
 package it.stacja.app.web.wykop.app;
 
-import it.stacja.app.web.wykop.commands.CreateWykopRequest;
 import it.stacja.app.web.wykop.domain.Wykop;
 
 import java.util.List;
 
 public interface WykopService {
 
-    void createWykop(CreateWykopRequest request);
+    void createWykop();
 
     List<Wykop> findWykop();
 
