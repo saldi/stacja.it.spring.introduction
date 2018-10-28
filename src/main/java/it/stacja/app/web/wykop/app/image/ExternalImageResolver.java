@@ -7,7 +7,9 @@ import org.jsoup.nodes.Document;
 import org.jsoup.select.Elements;
 
 import java.io.IOException;
+import org.springframework.stereotype.Component;
 
+@Component
 public class ExternalImageResolver implements PageImageResolver {
 
     private static final Logger LOGGER

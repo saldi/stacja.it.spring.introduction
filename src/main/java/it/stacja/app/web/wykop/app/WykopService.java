@@ -6,7 +6,7 @@ import java.util.List;
 
 public interface WykopService {
 
-    void createWykop();
+    void createWykop(CreateWykopRequest request);
 
     List<Wykop> findWykop();
 
