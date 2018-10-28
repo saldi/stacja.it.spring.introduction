@@ -21,7 +21,7 @@ public class ExternalImageResolver implements PageImageResolver {
         try {
             Document document = Jsoup.connect(pageURL).get();
             Elements metas = document.getElementsByTag("meta");
-            Elements meta = metas.select("[property='og:image'");
+            Elements meta = metas.select("[property='og:image']");
             return meta.stream()
                     .findFirst()
                     .map(element -> element
